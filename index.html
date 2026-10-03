@@ -25,31 +25,48 @@
           <p class="text-xs text-right text-slate-400 font-mono"> Real-time cubic equation analysis tool</p>
           <hr class="mt-5 text-slate-500/20 font-mono">
         </div>
-        <div class="w-full bg-slate-200/10 rounded-2xl flex py-5 px-5 font-mono">
-          <div class="group flex flex-col gap-2">
-            <label for="a-value">a-value [x³]</label>
-            <input type="number" id="a-value" name="a-value" class="rounded border px-8 py-2 max-w-30">
-          </div>
+        <div class="w-full bg-slate-200/10 rounded-2xl font-mono flex align-middle">
+          <div class="flex py-5 px-5">
+            <div class="group flex flex-col gap-2">
+              <label for="a-value">a-value [x³]</label>
+              <input type="number" id="a-value" name="a-value" class="rounded border px-8 py-2 max-w-30">
+            </div>
 
-          <div class="group flex flex-col gap-2">
-            <label for="b-value">b-value [x²]</label>
-            <input type="number" id="b-value" name="b-value" class="rounded border px-8 py-2 max-w-30">
-          </div>
+            <div class="group flex flex-col gap-2">
+              <label for="b-value">b-value [x²]</label>
+              <input type="number" id="b-value" name="b-value" class="rounded border px-8 py-2 max-w-30">
+            </div>
 
-          <div class="group flex flex-col gap-2">
-            <label for="c-value">c-value [x]</label>
-            <input type="number" id="c-value" name="c-value" class="rounded border px-8 py-2 max-w-30">
-          </div>
+            <div class="group flex flex-col gap-2">
+              <label for="c-value">c-value [x]</label>
+              <input type="number" id="c-value" name="c-value" class="rounded border px-8 py-2 max-w-30">
+            </div>
 
-          <div class="group flex flex-col gap-2">
-            <label for="d-value">d-value</label>
-            <input type="number" id="d-value" name="d-value" class="rounded border px-8 py-2 max-w-30">
+            <div class="group flex flex-col gap-2">
+              <label for="d-value">d-value</label>
+              <input type="number" id="d-value" name="d-value" class="rounded border px-8 py-2 max-w-30">
+            </div>
+          </div>
+          <div class="border max-w-30 max-h-10 rounded right-100">
+            <button type="submit" class="hover:bg-amber-300">Save</button>
           </div>
         </div>
-        <div class="grid grid-cols-4 gap-4">
-          <p>hello</p>
-          <p>hello</p>
-          <p>hello</p>
+        <div class="grid grid-cols-2 gap-4">
+          <section class="h-100">
+            <div class="flex items-center gap-4">
+              <h2 class="text-xs font-mono tracking-widest text-slate-500 uppercase font-bold">01 // Analysis</h2>
+            </div>
+          </section>
+          <section class="h-100">
+            <div class="flex items-center gap-4">
+              <h2 class="text-xs font-mono tracking-widest text-slate-500 uppercase font-bold">02 // Summary</h2>
+            </div>
+          </section>
+          <section class="h-100">
+            <div class="flex items-center gap-4">
+              <h2 class="text-xs font-mono tracking-widest text-slate-500 uppercase font-bold">03 // History</h2>
+            </div>
+          </section>
           <section class="space-y-6 flex flex-col">
             <div class="flex items-center gap-4">
               <h2 class="text-xs font-mono tracking-widest text-slate-500 uppercase font-bold">04 // GRAPH</h2>
