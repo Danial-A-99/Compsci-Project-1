@@ -1,32 +1,52 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Assignment 1</title>
-  </head>
-  <body>
-    <div class="min-h-screen bg-[#07090e] text-slate-200 antialiased selection:bg-cyan-500/20 selection:text-cyan-300">
-      <div class="w-full max-w-6xl mx-auto px-4 py-16 space-y-12">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Assignment 1</title>
+</head>
+
+<body>
+  <div class="min-h-screen bg-[#07090e] text-slate-200 antialiased selection:bg-cyan-500/20 selection:text-cyan-300">
+    <div class="w-full max-w-6xl mx-auto px-4 py-16 space-y-12">
+      <main class="space-y-12">
         <div>
-        <h2 class="text-xs font-mono tracking-widest text-cyan-400 uppercase font-bold">// Agincourt Edition</h2>
-        <h1 class="font-bold text-slate-200 text-3xl">Cubic Equation Solver</h1>
+          <h2 class="text-xs font-mono tracking-widest text-cyan-400 uppercase font-bold">// Agincourt Edition</h2>
+          <h1 class="font-bold text-slate-200 text-3xl">Cubic Equation Solver</h1>
+          <p class="text-xs text-right text-slate-400 font-mono"> Real-time cubic equation analysis tool</p>
+          <hr class="mt-5 text-slate-500/20 font-mono">
         </div>
-        <main class="space-y-12">
-          <div class="grid grid-cols-4 gap-4">
-          <p>hello</p>
-          <p>hello</p>
-          <p>hello</p>
-          <p>hello</p>
+        <div class="w-full bg-slate-200/10 rounded-2xl flex py-5 px-5 font-mono">
+          <div class="group flex flex-col gap-2">
+            <label for="a-value">a-value [x³]</label>
+            <input type="number" id="a-value" name="a-value" class="rounded border px-8 py-2 max-w-30">
+          </div>
+
+          <div class="group flex flex-col gap-2">
+            <label for="b-value">b-value [x²]</label>
+            <input type="number" id="b-value" name="b-value" class="rounded border px-8 py-2 max-w-30">
+          </div>
+
+          <div class="group flex flex-col gap-2">
+            <label for="c-value">c-value [x]</label>
+            <input type="number" id="c-value" name="c-value" class="rounded border px-8 py-2 max-w-30">
+          </div>
+
+          <div class="group flex flex-col gap-2">
+            <label for="d-value">d-value</label>
+            <input type="number" id="d-value" name="d-value" class="rounded border px-8 py-2 max-w-30">
+          </div>
+        </div>
+        <div class="grid grid-cols-4 gap-4">
           <p>hello</p>
           <p>hello</p>
           <p>hello</p>
@@ -35,21 +55,16 @@
               <h2 class="text-xs font-mono tracking-widest text-slate-500 uppercase font-bold">04 // GRAPH</h2>
             </div>
             <div
-              class="flex-1 rounded-xl border border-slate-900 bg-[#0b0f19]/50 p-6 shadow-2xl bg-[radial-gradient(#1e293b_1px,transparent_1px)] bg-size-[16px_16px]"
-            >
-              <canvas
-                id="graph"
-                width="400"
-                height="400"
-                class="w-full rounded-md border border-slate-900 bg-[#04060a] shadow-inner"
-              ></canvas>
+              class="flex-1 rounded-xl border border-slate-900 bg-[#0b0f19]/50 p-6 shadow-2xl bg-[radial-gradient(#1e293b_1px,transparent_1px)] bg-size-[16px_16px]">
+              <canvas id="graph" width="400" height="400"
+                class="w-full rounded-md border border-slate-900 bg-[#04060a] shadow-inner"></canvas>
             </div>
           </section>
         </div>
-        </main>
-      </div>
+      </main>
     </div>
-    <script>
+  </div>
+  <script>
     const canvas = document.getElementById("graph");
     const ctx = canvas.getContext("2d");
     console.log(canvas, ctx);
@@ -95,6 +110,7 @@
 
       ctx.restore();
     }
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>
