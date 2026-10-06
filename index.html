@@ -17,215 +17,213 @@
 
 <body>
   <div class="min-h-screen bg-[#07090e] text-slate-200 antialiased selection:bg-cyan-500/20 selection:text-cyan-300">
-    <div class="w-full max-w-6xl mx-auto px-4 py-16 space-y-12">
-      <main class="space-y-12">
-        <div>
-          <h2 class="text-xs font-mono tracking-widest text-cyan-400 uppercase font-bold">// Agincourt Edition</h2>
-          <h1 class="font-bold text-slate-200 text-3xl">Cubic Equation Solver</h1>
-          <p class="text-xs text-right text-slate-400 font-mono"> Real-time cubic equation analysis tool</p>
-          <hr class="mt-5 text-slate-500/20 font-mono">
-        </div>
-        <div class="w-full bg-slate-200/10 rounded-2xl font-mono flex align-middle">
-          <div class="flex py-5 px-5">
-            <div class="group flex flex-col gap-2">
-              <label for="a-value">a-value [x³]</label>
-              <input type="number" id="a-value" name="a-value" value="0" class="rounded border px-8 py-2 max-w-30">
-            </div>
-
-            <div class="group flex flex-col gap-2">
-              <label for="b-value">b-value [x²]</label>
-              <input type="number" id="b-value" name="b-value" value="0" class="rounded border px-8 py-2 max-w-30">
-            </div>
-
-            <div class="group flex flex-col gap-2">
-              <label for="c-value">c-value [x]</label>
-              <input type="number" id="c-value" name="c-value" value="0" class="rounded border px-8 py-2 max-w-30">
-            </div>
-
-            <div class="group flex flex-col gap-2">
-              <label for="d-value">d-value</label>
-              <input type="number" id="d-value" name="d-value" value="0" class="rounded border px-8 py-2 max-w-30">
-            </div>
-          </div>
-          <div class="border max-w-30 max-h-10 rounded right-100">
-            <button type="submit" class="hover:bg-amber-300">Save</button>
-          </div>
-        </div>
-        <div class="grid grid-cols-2 gap-4">
-          <section class="h-100 flex flex-col">
-            <div class="flex items-center gap-4">
-              <h2 class="text-xs font-mono tracking-widest text-slate-500 uppercase font-bold">01 // Analysis</h2>
-            </div>
-            <div class="flex flex-wrap gap-90 p-3 text-xs font-mono border-b">
-              <p>[p] parameter</p>
-              <p>0.00000</p>
-            </div>
-            <div class="flex flex-wrap gap-90 p-3 text-xs font-mono border-b">
-              <p>[q] parameter</p>
-              <p>0.00000</p>
-            </div>
-            <div class="flex flex-wrap gap-84 p-3 text-xs font-mono border-b">
-              <p>[Δ] discriminant</p>
-              <p>0.00000</p>
-            </div>
-            <div class="flex flex-wrap gap-72 p-3 text-xs font-mono border-b">
-              <p>[r1] root alpha</p>
-              <p>x: N/A | y: N/A</p>
-            </div>
-            <div class="flex flex-wrap gap-74 p-3 text-xs font-mono border-b">
-              <p>[r2] root beta</p>
-              <p>x: N/A | y: N/A</p>
-            </div>
-            <div class="flex flex-wrap gap-72 p-3 text-xs font-mono border-b">
-              <p>[r3] root gamma</p>
-              <p>x: N/A | y: N/A</p>
-            </div>
-            <div class="flex flex-wrap gap-63 p-3 text-xs font-mono border-b">
-              <p>[min] critical point</p>
-              <p>x: N/A | y: N/A</p>
-            </div>
-            <div class="flex flex-wrap gap-63 p-3 text-xs font-mono border-b">
-              <p>[max] critical point</p>
-              <p>x: N/A | y: N/A</p>
-            </div>
-          </section>
-          <section class="h-100 flex flex-col">
-            <div class="flex items-center gap-4">
-              <h2 class="text-xs font-mono tracking-widest text-slate-500 uppercase font-bold mb-4">02 // Summary</h2>
-            </div>
-            <div class="bg-slate-500/20 rounded p-3 mb-1">
-              <p class="text-xs">f(x) expanded polynomial</p>
-              <p>N/A</p>
-            </div>
-            <div class="bg-slate-500/20 rounded p-3 mb-1">
-              <p class="text-xs">f'(x) first derivative</p>
-              <p>N/A</p>
-            </div>
-            <div class="bg-slate-500/20 rounded p-3 mb-1">
-              <p class="text-xs">f''(x) second derivative</p>
-              <p>N/A</p>
-            </div>
-            <div class="bg-slate-500/20 rounded p-3 mb-1">
-              <p class="text-xs">roots</p>
-              <p>N/A</p>
-            </div>
-            <div class="bg-slate-500/20 rounded p-3 mb-1">
-              <p class="text-xs">factored form</p>
-              <p>No real factorization</p>
-            </div>
-          </section>
-          <section class="h-100 flex flex-col">
-            <div class="items-center gap-4">
-              <h2 class="text-xs font-mono tracking-widest text-slate-500 uppercase font-bold">03 // History</h2>
-              <div class="flex flex-col max-h-100 overflow-y-scroll">
-                <div class="flex">
-                  <div class="flex border gap-30 p-5 rounded">
-                    <p>1</p>
-                    <p>2</p>
-                    <p>3</p>
-                    <p>4</p>
-                  </div>
-                  <button type="submit" class="ml-3 border">Delete</button>
-                </div>
-                <div class="flex">
-                  <div class="flex border gap-30 p-5 rounded">
-                    <p>1</p>
-                    <p>2</p>
-                    <p>6</p>
-                    <p>4</p>
-                  </div>
-                  <button type="submit" class="ml-3 border">Delete</button>
-                </div>
-                <div class="flex">
-                  <div class="flex border gap-30 p-5 rounded">
-                    <p>1</p>
-                    <p>2</p>
-                    <p>5</p>
-                    <p>8</p>
-                  </div>
-                  <button type="submit" class="ml-3 border">Delete</button>
-                </div>
-                <div class="flex">
-                  <div class="flex border gap-30 p-5 rounded">
-                    <p>1</p>
-                    <p>3</p>
-                    <p>3</p>
-                    <p>4</p>
-                  </div>
-                  <button type="submit" class="ml-3 border">Delete</button>
-                </div>
-                <div class="flex">
-                  <div class="flex border gap-30 p-5 rounded">
-                    <p>1</p>
-                    <p>3</p>
-                    <p>3</p>
-                    <p>4</p>
-                  </div>
-                  <button type="submit" class="ml-3 border">Delete</button>
-                </div>
-                <div class="flex">
-                  <div class="flex border gap-30 p-5 rounded">
-                    <p>1</p>
-                    <p>3</p>
-                    <p>3</p>
-                    <p>4</p>
-                  </div>
-                  <button type="submit" class="ml-3 border">Delete</button>
-                </div>
-                <div class="flex">
-                  <div class="flex border gap-30 p-5 rounded">
-                    <p>1</p>
-                    <p>3</p>
-                    <p>3</p>
-                    <p>4</p>
-                  </div>
-                  <button type="submit" class="ml-3 border">Delete</button>
-                </div>
-                <div class="flex">
-                  <div class="flex border gap-30 p-5 rounded">
-                    <p>1</p>
-                    <p>3</p>
-                    <p>3</p>
-                    <p>4</p>
-                  </div>
-                  <button type="submit" class="ml-3 border">Delete</button>
-                </div>
-                <div class="flex">
-                  <div class="flex border gap-30 p-5 rounded">
-                    <p>1</p>
-                    <p>3</p>
-                    <p>3</p>
-                    <p>4</p>
-                  </div>
-                  <button type="submit" class="ml-3 border">Delete</button>
-                </div>
-                <div class="flex">
-                  <div class="flex border gap-30 p-5 rounded">
-                    <p>1</p>
-                    <p>3</p>
-                    <p>3</p>
-                    <p>4</p>
-                  </div>
-                  <button type="submit" class="ml-3 border">Delete</button>
-                </div>
-                <p>Click a row to load history.</p>
-              </div>
-            </div>
-          </section>
-          <section class="space-y-6 flex flex-col">
-            <div class="flex items-center gap-4">
-              <h2 class="text-xs font-mono tracking-widest text-slate-500 uppercase font-bold">04 // GRAPH</h2>
-            </div>
-            <div
-              class="flex-1 rounded-xl border border-slate-900 bg-[#0b0f19]/50 p-6 shadow-2xl bg-[radial-gradient(#1e293b_1px,transparent_1px)] bg-size-[16px_16px]">
-              <canvas id="graph" width="400" height="400"
-                class="w-full rounded-md border border-slate-900 bg-[#04060a] shadow-inner"></canvas>
-            </div>
-          </section>
-        </div>
+    <main class="w-full max-w-6xl mx-auto px-4 py-16 space-y-12">
+      <div>
+        <h2 class="text-xs font-mono tracking-widest text-cyan-400 uppercase font-bold">// Agincourt Edition</h2>
+        <h1 class="font-bold text-slate-200 text-3xl">Cubic Equation Solver</h1>
+        <p class="text-xs text-right text-slate-400 font-mono"> Real-time cubic equation analysis tool</p>
         <hr class="mt-5 text-slate-500/20 font-mono">
-      </main>
-    </div>
+      </div>
+      <div class="w-full bg-slate-200/10 rounded-2xl font-mono flex align-middle">
+        <div class="flex py-5 px-5">
+          <div class="group flex flex-col gap-2">
+            <label for="a-value">a-value [x³]</label>
+            <input type="number" id="a-value" name="a-value" value="0" class="rounded border px-8 py-2 max-w-30">
+          </div>
+
+          <div class="group flex flex-col gap-2">
+            <label for="b-value">b-value [x²]</label>
+            <input type="number" id="b-value" name="b-value" value="0" class="rounded border px-8 py-2 max-w-30">
+          </div>
+
+          <div class="group flex flex-col gap-2">
+            <label for="c-value">c-value [x]</label>
+            <input type="number" id="c-value" name="c-value" value="0" class="rounded border px-8 py-2 max-w-30">
+          </div>
+
+          <div class="group flex flex-col gap-2">
+            <label for="d-value">d-value</label>
+            <input type="number" id="d-value" name="d-value" value="0" class="rounded border px-8 py-2 max-w-30">
+          </div>
+        </div>
+        <div class="border max-w-30 max-h-10 rounded right-100">
+          <button type="submit" class="hover:bg-amber-300">Save</button>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <section class="h-100 flex flex-col">
+          <div class="flex items-center gap-4">
+            <h2 class="text-xs font-mono tracking-widest text-slate-500 uppercase font-bold">01 // Analysis</h2>
+          </div>
+          <div class="flex flex-wrap gap-90 p-3 text-xs font-mono border-b">
+            <p>[p] parameter</p>
+            <p>0.00000</p>
+          </div>
+          <div class="flex flex-wrap gap-90 p-3 text-xs font-mono border-b">
+            <p>[q] parameter</p>
+            <p>0.00000</p>
+          </div>
+          <div class="flex flex-wrap gap-84 p-3 text-xs font-mono border-b">
+            <p>[Δ] discriminant</p>
+            <p>0.00000</p>
+          </div>
+          <div class="flex flex-wrap gap-72 p-3 text-xs font-mono border-b">
+            <p>[r1] root alpha</p>
+            <p>x: N/A | y: N/A</p>
+          </div>
+          <div class="flex flex-wrap gap-74 p-3 text-xs font-mono border-b">
+            <p>[r2] root beta</p>
+            <p>x: N/A | y: N/A</p>
+          </div>
+          <div class="flex flex-wrap gap-72 p-3 text-xs font-mono border-b">
+            <p>[r3] root gamma</p>
+            <p>x: N/A | y: N/A</p>
+          </div>
+          <div class="flex flex-wrap gap-63 p-3 text-xs font-mono border-b">
+            <p>[min] critical point</p>
+            <p>x: N/A | y: N/A</p>
+          </div>
+          <div class="flex flex-wrap gap-63 p-3 text-xs font-mono border-b">
+            <p>[max] critical point</p>
+            <p>x: N/A | y: N/A</p>
+          </div>
+        </section>
+        <section class="h-100 flex flex-col">
+          <div class="flex items-center gap-4">
+            <h2 class="text-xs font-mono tracking-widest text-slate-500 uppercase font-bold mb-4">02 // Summary</h2>
+          </div>
+          <div class="bg-slate-500/20 rounded p-3 mb-1">
+            <p class="text-xs">f(x) expanded polynomial</p>
+            <p>N/A</p>
+          </div>
+          <div class="bg-slate-500/20 rounded p-3 mb-1">
+            <p class="text-xs">f'(x) first derivative</p>
+            <p>N/A</p>
+          </div>
+          <div class="bg-slate-500/20 rounded p-3 mb-1">
+            <p class="text-xs">f''(x) second derivative</p>
+            <p>N/A</p>
+          </div>
+          <div class="bg-slate-500/20 rounded p-3 mb-1">
+            <p class="text-xs">roots</p>
+            <p>N/A</p>
+          </div>
+          <div class="bg-slate-500/20 rounded p-3 mb-1">
+            <p class="text-xs">factored form</p>
+            <p>No real factorization</p>
+          </div>
+        </section>
+        <section class="h-100 flex flex-col">
+          <div class="items-center gap-4">
+            <h2 class="text-xs font-mono tracking-widest text-slate-500 uppercase font-bold">03 // History</h2>
+            <div class="flex flex-col max-h-100 overflow-y-scroll">
+              <div class="flex">
+                <div class="flex border gap-30 p-5 rounded">
+                  <p>1</p>
+                  <p>2</p>
+                  <p>3</p>
+                  <p>4</p>
+                </div>
+                <button type="submit" class="ml-3 border">Delete</button>
+              </div>
+              <div class="flex">
+                <div class="flex border gap-30 p-5 rounded">
+                  <p>1</p>
+                  <p>2</p>
+                  <p>6</p>
+                  <p>4</p>
+                </div>
+                <button type="submit" class="ml-3 border">Delete</button>
+              </div>
+              <div class="flex">
+                <div class="flex border gap-30 p-5 rounded">
+                  <p>1</p>
+                  <p>2</p>
+                  <p>5</p>
+                  <p>8</p>
+                </div>
+                <button type="submit" class="ml-3 border">Delete</button>
+              </div>
+              <div class="flex">
+                <div class="flex border gap-30 p-5 rounded">
+                  <p>1</p>
+                  <p>3</p>
+                  <p>3</p>
+                  <p>4</p>
+                </div>
+                <button type="submit" class="ml-3 border">Delete</button>
+              </div>
+              <div class="flex">
+                <div class="flex border gap-30 p-5 rounded">
+                  <p>1</p>
+                  <p>3</p>
+                  <p>3</p>
+                  <p>4</p>
+                </div>
+                <button type="submit" class="ml-3 border">Delete</button>
+              </div>
+              <div class="flex">
+                <div class="flex border gap-30 p-5 rounded">
+                  <p>1</p>
+                  <p>3</p>
+                  <p>3</p>
+                  <p>4</p>
+                </div>
+                <button type="submit" class="ml-3 border">Delete</button>
+              </div>
+              <div class="flex">
+                <div class="flex border gap-30 p-5 rounded">
+                  <p>1</p>
+                  <p>3</p>
+                  <p>3</p>
+                  <p>4</p>
+                </div>
+                <button type="submit" class="ml-3 border">Delete</button>
+              </div>
+              <div class="flex">
+                <div class="flex border gap-30 p-5 rounded">
+                  <p>1</p>
+                  <p>3</p>
+                  <p>3</p>
+                  <p>4</p>
+                </div>
+                <button type="submit" class="ml-3 border">Delete</button>
+              </div>
+              <div class="flex">
+                <div class="flex border gap-30 p-5 rounded">
+                  <p>1</p>
+                  <p>3</p>
+                  <p>3</p>
+                  <p>4</p>
+                </div>
+                <button type="submit" class="ml-3 border">Delete</button>
+              </div>
+              <div class="flex">
+                <div class="flex border gap-30 p-5 rounded">
+                  <p>1</p>
+                  <p>3</p>
+                  <p>3</p>
+                  <p>4</p>
+                </div>
+                <button type="submit" class="ml-3 border">Delete</button>
+              </div>
+              <p>Click a row to load history.</p>
+            </div>
+          </div>
+        </section>
+        <section class="space-y-6 flex flex-col">
+          <div class="flex items-center gap-4">
+            <h2 class="text-xs font-mono tracking-widest text-slate-500 uppercase font-bold">04 // GRAPH</h2>
+          </div>
+          <div
+            class="flex-1 rounded-xl border border-slate-900 bg-[#0b0f19]/50 p-6 shadow-2xl bg-[radial-gradient(#1e293b_1px,transparent_1px)] bg-size-[16px_16px]">
+            <canvas id="graph" width="400" height="400"
+              class="w-full rounded-md border border-slate-900 bg-[#04060a] shadow-inner"></canvas>
+          </div>
+        </section>
+      </div>
+      <hr class="mt-5 text-slate-500/20 font-mono">
+    </main>
   </div>
   <script>
     const canvas = document.getElementById("graph");
