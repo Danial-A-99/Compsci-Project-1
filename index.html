@@ -25,30 +25,32 @@
         <hr class="mt-5 text-slate-500/20 font-mono">
       </div>
       <div class="w-full bg-slate-200/10 rounded-2xl font-mono flex align-middle">
-        <div class="flex py-5 px-5">
-          <div class="group flex flex-col gap-2">
-            <label for="a-value">a-value [x³]</label>
-            <input type="number" id="a-value" name="a-value" value="0" class="rounded border px-8 py-2 max-w-30">
-          </div>
+        <form>
+          <div class="flex py-5 px-5">
+            <div class="group flex flex-col gap-2">
+              <label for="a-value">a-value [x³]</label>
+              <input type="number" id="a-value" name="a-value" value="0" class="rounded border px-8 py-2 max-w-30">
+            </div>
 
-          <div class="group flex flex-col gap-2">
-            <label for="b-value">b-value [x²]</label>
-            <input type="number" id="b-value" name="b-value" value="0" class="rounded border px-8 py-2 max-w-30">
-          </div>
+            <div class="group flex flex-col gap-2">
+              <label for="b-value">b-value [x²]</label>
+              <input type="number" id="b-value" name="b-value" value="0" class="rounded border px-8 py-2 max-w-30">
+            </div>
 
-          <div class="group flex flex-col gap-2">
-            <label for="c-value">c-value [x]</label>
-            <input type="number" id="c-value" name="c-value" value="0" class="rounded border px-8 py-2 max-w-30">
-          </div>
+            <div class="group flex flex-col gap-2">
+              <label for="c-value">c-value [x]</label>
+              <input type="number" id="c-value" name="c-value" value="0" class="rounded border px-8 py-2 max-w-30">
+            </div>
 
-          <div class="group flex flex-col gap-2">
-            <label for="d-value">d-value</label>
-            <input type="number" id="d-value" name="d-value" value="0" class="rounded border px-8 py-2 max-w-30">
+            <div class="group flex flex-col gap-2">
+              <label for="d-value">d-value [c]</label>
+              <input type="number" id="d-value" name="d-value" value="0" class="rounded border px-8 py-2 max-w-30">
+            </div>
           </div>
-        </div>
-        <div class="border max-w-30 max-h-10 rounded right-100">
-          <button type="submit" class="hover:bg-amber-300">Save</button>
-        </div>
+          <div class="border max-w-30 max-h-10 rounded right-100 bg-cyan-300 text-center hover:bg-cyan-400">
+            <button type="submit">Save</button>
+          </div>
+        </form>
       </div>
       <div class="grid grid-cols-2 gap-4">
         <section class="h-100 flex flex-col">
