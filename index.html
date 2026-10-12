@@ -26,73 +26,80 @@
       </header>
       <div
         class="w-full bg-[#0b0f19] rounded-2xl font-mono flex align-middle border-slate-800 border border-l-cyan-500 border-l-4 p-1">
-        <section class="text-mono text-xs ">
-          <form>
-            <div class="flex flex-wrap gap-5 py-5 px-5 items-center">
-              <div class="group flex flex-col gap-2 text-slate-500">
-                <label for="a-value">a-value [x³]</label>
-                <input type="number" id="a-value" name="a-value" value="0"
-                  class="rounded border px-8 py-2 max-w-30 text-white text-base border-slate-800 bg-[#121824]">
-              </div>
+        <form class="flex flex-wrap py-5 px-5 items-center justify-between text-mono text-xs w-full">
+          <div class="flex flex-wrap gap-5">
+            <div class="group flex flex-col gap-2 text-slate-500">
+              <label for="a-value">a-value [x³]</label>
+              <input type="number" id="a-value" name="a-value" value="0"
+                class="rounded border px-8 py-2 max-w-30 text-white text-base border-slate-800 bg-[#121824]">
+            </div>
 
-              <div class="group flex flex-col gap-2 text-slate-500">
-                <label for="a-value"> b-value [x²]</label>
-                <input type="number" id="b-value" name="b-value" value="0"
-                  class="rounded border px-8 py-2 max-w-30 text-white text-base border-slate-800 bg-[#121824]">
-              </div>
+            <div class="group flex flex-col gap-2 text-slate-500">
+              <label for="a-value"> b-value [x²]</label>
+              <input type="number" id="b-value" name="b-value" value="0"
+                class="rounded border px-8 py-2 max-w-30 text-white text-base border-slate-800 bg-[#121824]">
+            </div>
 
-              <div class="group flex flex-col gap-2 text-slate-500">
-                <label for="a-value"> c-value [x]</label>
-                <input type="number" id="c-value" name="c-value" value="0"
-                  class="rounded border px-8 py-2 max-w-30 text-white text-base border-slate-800 bg-[#121824]">
-              </div>
+            <div class="group flex flex-col gap-2 text-slate-500">
+              <label for="a-value"> c-value [x]</label>
+              <input type="number" id="c-value" name="c-value" value="0"
+                class="rounded border px-8 py-2 max-w-30 text-white text-base border-slate-800 bg-[#121824]">
+            </div>
 
-              <div class="group flex flex-col gap-2 text-slate-500">
-                <label for="a-value"> d-value [c]</label>
-                <input type="number" id="d-value" name="d-value" value="0"
-                  class="rounded border px-8 py-2 max-w-30 text-white text-base border-slate-800 bg-[#121824]">
-              </div>
-              <div class="ml-auto">
-                <button type="submit"
-                  class="border max-w-auto max-h-10 rounded bg-cyan-500  hover:bg-cyan-400 pr-6 pl-6 pt-3 pb-6 text-black font-bold uppercase self-end">Save</button>
-              </div>
-          </form>
-        </section>
+            <div class="group flex flex-col gap-2 text-slate-500">
+              <label for="a-value"> d-value [c]</label>
+              <input type="number" id="d-value" name="d-value" value="0"
+                class="rounded border px-8 py-2 max-w-30 text-white text-base border-slate-800 bg-[#121824]">
+            </div>
+          </div>
+          <div class="justify-end">
+            <button type="submit"
+              class="border max-w-auto max-h-10 rounded bg-cyan-500  hover:bg-cyan-400 pr-6 pl-6 pt-3 pb-6 text-black font-bold uppercase">Save</button>
+          </div>
+        </form>
       </div>
       <div class="grid grid-cols-2 gap-4">
         <section class="h-100 flex flex-col">
           <div class="flex items-center gap-4">
             <h2 class="text-xs font-mono tracking-widest text-slate-500 uppercase font-bold mb-6">01 // Analysis</h2>
           </div>
-          <div class="flex flex-wrap justify-between p-3 text-xs font-mono border-b border-slate-800 hover:bg-slate-900/30 text-slate-500 mb-1 mr-4">
+          <div
+            class="flex flex-wrap justify-between p-3 text-xs font-mono border-b border-slate-800 hover:bg-slate-900/30 text-slate-500 mb-1 mr-4">
             <p>[p] parameter</p>
             <p class="text-white">0.0000</p>
           </div>
-          <div class="flex flex-wrap justify-between p-3 text-xs font-mono border-b border-slate-800 hover:bg-slate-900/30 text-slate-500 mb-1 mr-4">
+          <div
+            class="flex flex-wrap justify-between p-3 text-xs font-mono border-b border-slate-800 hover:bg-slate-900/30 text-slate-500 mb-1 mr-4">
             <p>[q] parameter</p>
             <p class="text-white">0.0000</p>
           </div>
-          <div class="flex flex-wrap justify-between p-3 text-xs font-mono border-b border-slate-800 hover:bg-slate-900/30 text-slate-500 mb-1 mr-4">
+          <div
+            class="flex flex-wrap justify-between p-3 text-xs font-mono border-b border-slate-800 hover:bg-slate-900/30 text-slate-500 mb-1 mr-4">
             <p>[Δ] discriminant</p>
             <p class="text-yellow-400">0.0000</p>
           </div>
-          <div class="flex flex-wrap justify-between p-3 text-xs font-mono border-b border-slate-800 hover:bg-slate-900/30 text-slate-500 mb-1 mr-4">
+          <div
+            class="flex flex-wrap justify-between p-3 text-xs font-mono border-b border-slate-800 hover:bg-slate-900/30 text-slate-500 mb-1 mr-4">
             <p>[r1] root alpha</p>
             <p class="text-green-400">x: N/A | y: N/A</p>
           </div>
-          <div class="flex flex-wrap justify-between p-3 text-xs font-mono border-b border-slate-800 hover:bg-slate-900/30 text-slate-500 mb-1 mr-4">
+          <div
+            class="flex flex-wrap justify-between p-3 text-xs font-mono border-b border-slate-800 hover:bg-slate-900/30 text-slate-500 mb-1 mr-4">
             <p>[r2] root beta</p>
             <p class="text-green-400">x: N/A | y: N/A</p>
           </div>
-          <div class="flex flex-wrap justify-between p-3 text-xs font-mono border-b border-slate-800 hover:bg-slate-900/30 text-slate-500 mb-1 mr-4">
+          <div
+            class="flex flex-wrap justify-between p-3 text-xs font-mono border-b border-slate-800 hover:bg-slate-900/30 text-slate-500 mb-1 mr-4">
             <p>[r3] root gamma</p>
             <p class="text-green-400">x: N/A | y: N/A</p>
           </div>
-          <div class="flex flex-wrap justify-between p-3 text-xs font-mono border-b border-slate-800 hover:bg-slate-900/30 text-slate-500 mb-1 mr-4">
+          <div
+            class="flex flex-wrap justify-between p-3 text-xs font-mono border-b border-slate-800 hover:bg-slate-900/30 text-slate-500 mb-1 mr-4">
             <p>[min] critical point</p>
             <p class="text-cyan-500">x: N/A | y: N/A</p>
           </div>
-          <div class="flex flex-wrap justify-between p-3 text-xs font-mono border-b border-slate-800 hover:bg-slate-900/30 text-slate-500 mb-1 mr-4">
+          <div
+            class="flex flex-wrap justify-between p-3 text-xs font-mono border-b border-slate-800 hover:bg-slate-900/30 text-slate-500 mb-1 mr-4">
             <p>[max] critical point</p>
             <p class="text-purple-400">x: N/A | y: N/A</p>
           </div>
@@ -127,94 +134,114 @@
             <h2 class="text-xs font-mono tracking-widest text-slate-500 uppercase font-bold">03 // History</h2>
             <div class="flex flex-col max-h-130 overflow-y-scroll pt-4 mt-6 mr-4">
               <div class="flex items-center mb-2 ">
-                <div class="flex border border-slate-700 gap-25 px-12 py-3 rounded-xl text-sm font-mono bg-slate-800/40">
+                <div
+                  class="flex border border-slate-700 gap-25 px-12 py-3 rounded-xl text-sm font-mono bg-slate-800/40">
                   <p>1</p>
                   <p>2</p>
                   <p>3</p>
                   <p>4</p>
                 </div>
-                <button type="submit" class="ml-2 border border-red-500/30 bg-red-500/10 text-red-400 rounded-xl px-4 text-xs font-bold font-mono h-9">Delete</button>
+                <button type="submit"
+                  class="ml-2 border border-red-500/30 bg-red-500/10 text-red-400 rounded-xl px-4 text-xs font-bold font-mono h-9">Delete</button>
               </div>
               <div class="flex items-center mb-2 ">
-                <div class="flex border border-slate-700 gap-25 px-12 py-3 rounded-xl text-sm font-mono bg-slate-800/40">
+                <div
+                  class="flex border border-slate-700 gap-25 px-12 py-3 rounded-xl text-sm font-mono bg-slate-800/40">
                   <p>1</p>
                   <p>2</p>
                   <p>6</p>
                   <p>4</p>
                 </div>
-                <button type="submit" class="ml-2 border border-red-500/30 bg-red-500/10 text-red-400 rounded-xl px-4 text-xs font-bold font-mono h-9">Delete</button>
+                <button type="submit"
+                  class="ml-2 border border-red-500/30 bg-red-500/10 text-red-400 rounded-xl px-4 text-xs font-bold font-mono h-9">Delete</button>
               </div>
               <div class="flex items-center mb-2 ">
-                <div class="flex border border-slate-700 gap-25 px-12 py-3 rounded-xl text-sm font-mono bg-slate-800/40">
+                <div
+                  class="flex border border-slate-700 gap-25 px-12 py-3 rounded-xl text-sm font-mono bg-slate-800/40">
                   <p>1</p>
                   <p>2</p>
                   <p>5</p>
                   <p>8</p>
                 </div>
-                <button type="submit" class="ml-2 border border-red-500/30 bg-red-500/10 text-red-400 rounded-xl px-4 text-xs font-bold font-mono h-9">Delete</button>
+                <button type="submit"
+                  class="ml-2 border border-red-500/30 bg-red-500/10 text-red-400 rounded-xl px-4 text-xs font-bold font-mono h-9">Delete</button>
               </div>
               <div class="flex items-center mb-2 ">
-                <div class="flex border border-slate-700 gap-25 px-12 py-3 rounded-xl text-sm font-mono bg-slate-800/40">
+                <div
+                  class="flex border border-slate-700 gap-25 px-12 py-3 rounded-xl text-sm font-mono bg-slate-800/40">
                   <p>1</p>
                   <p>3</p>
                   <p>3</p>
                   <p>4</p>
                 </div>
-                <button type="submit" class="ml-2 border border-red-500/30 bg-red-500/10 text-red-400 rounded-xl px-4 text-xs font-bold font-mono h-9">Delete</button>
+                <button type="submit"
+                  class="ml-2 border border-red-500/30 bg-red-500/10 text-red-400 rounded-xl px-4 text-xs font-bold font-mono h-9">Delete</button>
               </div>
               <div class="flex items-center mb-2 ">
-                <div class="flex border border-slate-700 gap-25 px-12 py-3 rounded-xl text-sm font-mono bg-slate-800/40">
+                <div
+                  class="flex border border-slate-700 gap-25 px-12 py-3 rounded-xl text-sm font-mono bg-slate-800/40">
                   <p>1</p>
                   <p>3</p>
                   <p>3</p>
                   <p>4</p>
                 </div>
-                <button type="submit" class="ml-2 border border-red-500/30 bg-red-500/10 text-red-400 rounded-xl px-4 text-xs font-bold font-mono h-9">Delete</button>
+                <button type="submit"
+                  class="ml-2 border border-red-500/30 bg-red-500/10 text-red-400 rounded-xl px-4 text-xs font-bold font-mono h-9">Delete</button>
               </div>
               <div class="flex items-center mb-2 ">
-                <div class="flex border border-slate-700 gap-25 px-12 py-3 rounded-xl text-sm font-mono bg-slate-800/40">
+                <div
+                  class="flex border border-slate-700 gap-25 px-12 py-3 rounded-xl text-sm font-mono bg-slate-800/40">
                   <p>1</p>
                   <p>3</p>
                   <p>3</p>
                   <p>4</p>
                 </div>
-                <button type="submit" class="ml-2 border border-red-500/30 bg-red-500/10 text-red-400 rounded-xl px-4 text-xs font-bold font-mono h-9">Delete</button>
+                <button type="submit"
+                  class="ml-2 border border-red-500/30 bg-red-500/10 text-red-400 rounded-xl px-4 text-xs font-bold font-mono h-9">Delete</button>
               </div>
               <div class="flex items-center mb-2 ">
-                <div class="flex border border-slate-700 gap-25 px-12 py-3 rounded-xl text-sm font-mono bg-slate-800/40">
+                <div
+                  class="flex border border-slate-700 gap-25 px-12 py-3 rounded-xl text-sm font-mono bg-slate-800/40">
                   <p>1</p>
                   <p>3</p>
                   <p>3</p>
                   <p>4</p>
                 </div>
-                <button type="submit" class="ml-2 border border-red-500/30 bg-red-500/10 text-red-400 rounded-xl px-4 text-xs font-bold font-mono h-9">Delete</button>
+                <button type="submit"
+                  class="ml-2 border border-red-500/30 bg-red-500/10 text-red-400 rounded-xl px-4 text-xs font-bold font-mono h-9">Delete</button>
               </div>
               <div class="flex items-center mb-2 ">
-                <div class="flex border border-slate-700 gap-25 px-12 py-3 rounded-xl text-sm font-mono bg-slate-800/40">
+                <div
+                  class="flex border border-slate-700 gap-25 px-12 py-3 rounded-xl text-sm font-mono bg-slate-800/40">
                   <p>1</p>
                   <p>3</p>
                   <p>3</p>
                   <p>4</p>
                 </div>
-                <button type="submit" class="ml-2 border border-red-500/30 bg-red-500/10 text-red-400 rounded-xl px-4 text-xs font-bold font-mono h-9">Delete</button>
+                <button type="submit"
+                  class="ml-2 border border-red-500/30 bg-red-500/10 text-red-400 rounded-xl px-4 text-xs font-bold font-mono h-9">Delete</button>
               </div>
               <div class="flex mb-2">
-                <div class="flex border border-slate-700 gap-25 px-12 py-3 rounded-xl text-sm font-mono bg-slate-800/40">
+                <div
+                  class="flex border border-slate-700 gap-25 px-12 py-3 rounded-xl text-sm font-mono bg-slate-800/40">
                   <p>1</p>
                   <p>3</p>
                   <p>3</p>
                   <p>4</p>
                 </div>
-                <button type="submit" class="ml-2 border border-red-500/30 bg-red-500/10 text-red-400 rounded-xl px-4 text-xs font-bold font-mono h-9">Delete</button>
+                <button type="submit"
+                  class="ml-2 border border-red-500/30 bg-red-500/10 text-red-400 rounded-xl px-4 text-xs font-bold font-mono h-9">Delete</button>
               </div>
               <div class="flex items-center mb-2 ">
-                <div class="flex border border-slate-700 gap-25 px-12 py-3 rounded-xl text-sm font-mono bg-slate-800/40">
+                <div
+                  class="flex border border-slate-700 gap-25 px-12 py-3 rounded-xl text-sm font-mono bg-slate-800/40">
                   <p>1</p>
                   <p>3</p>
                   <p>3</p>
                   <p>4</p>
                 </div>
-                <button type="submit" class="ml-2 border border-red-500/30 bg-red-500/10 text-red-400 rounded-xl px-4 text-xs font-bold font-mono h-9">Delete</button>
+                <button type="submit"
+                  class="ml-2 border border-red-500/30 bg-red-500/10 text-red-400 rounded-xl px-4 text-xs font-bold font-mono h-9">Delete</button>
               </div>
               <p class="font-mono italic text-slate-600">Click a row to load history.</p>
             </div>
@@ -232,21 +259,21 @@
         </section>
       </div>
       <footer>
-          <hr class="mt-5 text-slate-500/20 font-mono">
-          <div class="p-5 pt-10 flex justify-between">
-            <div class="relative">
+        <hr class="mt-5 text-slate-500/20 font-mono">
+        <div class="p-5 pt-10 flex justify-between">
+          <div class="relative">
             <p class="font-bold font-mono text-sm">Cubic Equation Solver</p>
             <p class=" font-mono text-xs text-slate-500">v1.0.0 - HTML + Tailwind CSS</p>
-            </div>
-            <div class="relative">
-              <a href="#" class="font-mono text-xs text-slate-500 hover:text-cyan-400 mx-4">Documentation</a>
-              <a href="#" class="font-mono text-xs text-slate-500 hover:text-cyan-400 mx-4">GitHub</a>
-              <a href="#" class="font-mono text-xs text-slate-500 hover:text-cyan-400 mx-4">Contact</a>
-            </div>
-            <div class="relative">
-              <p class="font-mono text-xs text-slate-500">&copy 2026 Agincourt CI</p>
-            </div>
           </div>
+          <div class="relative">
+            <a href="#" class="font-mono text-xs text-slate-500 hover:text-cyan-400 mx-4">Documentation</a>
+            <a href="#" class="font-mono text-xs text-slate-500 hover:text-cyan-400 mx-4">GitHub</a>
+            <a href="#" class="font-mono text-xs text-slate-500 hover:text-cyan-400 mx-4">Contact</a>
+          </div>
+          <div class="relative">
+            <p class="font-mono text-xs text-slate-500">&copy 2026 Agincourt CI</p>
+          </div>
+        </div>
       </footer>
     </main>
   </div>
